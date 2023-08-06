@@ -2,6 +2,7 @@
     <html lang="eng">
         <head>
             <link rel="stylesheet" href="style.css">
+            <script src="buttons.js"></script>
             <title>Alpaca Generator</title>
         </head>
         <body>
@@ -10,28 +11,34 @@
             </div>
             <div class="container">
                 <div class="main_image">
-                    <img src="assets/backgrounds/blue50.png" alt="blue50">
+                    <img class="background" src="assets/backgrounds/darkblue70.png" alt="bg">
+                    <img class="neck" src="assets/neck/default.png" alt="neck">
+                    <img class="ears" src="assets/ears/default.png" alt="ears">
+                    <img class="accessories" src="assets/accessories/headphone.png" alt="acc">
+                    <img class="hair" src="assets/hair/default.png" alt="hair">
+                    <img class="eyes" src="assets/eyes/default.png" alt="eyes">
+                    <img class="leg" src="assets/leg/default.png" alt="leg">
+                    <img class="nose" src="assets/nose.png" alt="nose">
+                    <img class="mouth" src="assets/mouth/default.png" alt="mouth">
                 </div>
                 <div class="editor">
                     <div class="upper_editor">
                         <h2>Editor</h2>
                         <div class="buttons">
-                            <table>
-                                <tr>
-                                    <td><button>Hair</button></td>
-                                    <td><button>Eyes</button></td>
-                                    <td><button>Ears</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button>Mouth</button></td>
-                                    <td><button>Neck</button></td>
-                                    <td><button>Leg</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button>background</button></td>
-                                    <td><button>Accessories</button></td>
-                                </tr>
-                            </table>
+                            <div class="buttons_1">
+                                <button id="b1">Hair</button>
+                                <button id="b2">Eyes</button>
+                                <button id="b3">Ears</button>
+                            </div>
+                            <div class="buttons_2">
+                                <button id="b4">Mouth</button>
+                                <button id="b5">Neck</button>
+                                <button id="b6">Leg</button>
+                            </div>
+                            <div class="buttons_3">
+                                <button id="b7">background</button>
+                                <button id="b8">Accessories</button>
+                            </div>
                         </div>
                     </div>
                     <div class="lower_editor">
