@@ -168,8 +168,22 @@ body
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    gap: 10px;
 }
 
+.style
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.style > div
+{
+    /* background-color: #f0f0f0; */
+    /* padding: 10px; */
+}
 .buttons_1
 {
     margin: 10px;
@@ -184,6 +198,7 @@ body
 {
     margin: 10px;
 }
+
 
 button
 {

@@ -2,8 +2,9 @@
     <html lang="eng">
         <head>
             <link rel="stylesheet" href="style.css">
-            <script src="buttons.js"></script>
             <script src="editor.js"></script>
+            <script src="style_editor.js"></script>
+            <script src="buttons.js"></script>
             <title>Alpaca Generator</title>
         </head>
         <body>
@@ -12,15 +13,15 @@
             </div>
             <div class="container">
                 <div class="main_image">
-                    <img class="background" src="assets/backgrounds/darkblue70.png" alt="bg">
-                    <img class="neck" src="assets/neck/default.png" alt="neck">
-                    <img class="ears" src="assets/ears/default.png" alt="ears">
-                    <img class="accessories" src="assets/accessories/headphone.png" alt="acc">
-                    <img class="hair" src="assets/hair/default.png" alt="hair">
-                    <img class="eyes" src="assets/eyes/default.png" alt="eyes">
-                    <img class="leg" src="assets/leg/default.png" alt="leg">
+                    <img class="background" id="bg" src="assets/backgrounds/darkblue70.png" alt="bg">
+                    <img class="neck" id="neck" src="assets/neck/default.png" alt="neck">
+                    <img class="ears" id="ears" src="assets/ears/default.png" alt="ears">
+                    <img class="accessories" id="accessories" src="assets/accessories/headphone.png" alt="acc">
+                    <img class="hair" id="hair" src="assets/hair/default.png" alt="hair">
+                    <img class="eyes" id="eyes" src="assets/eyes/default.png" alt="eyes">
+                    <img class="leg" id="leg" src="assets/leg/default.png" alt="leg">
                     <img class="nose" src="assets/nose.png" alt="nose">
-                    <img class="mouth" src="assets/mouth/default.png" alt="mouth">
+                    <img class="mouth" id="mouth" src="assets/mouth/default.png" alt="mouth">
                 </div>
                 <div class="editor">
                     <div class="upper_editor">
@@ -44,7 +45,11 @@
                     </div>
                     <div class="lower_editor">
                         <h2>Style</h2>
-                        <div id="button_container"></div>
+                        <div class="style">
+                            <div class="buttons_1" id="first_line"></div>
+                            <div class="buttons_2" id="second_line"></div>
+                            <div class="buttons_3" id="third_line"></div>
+                        </div>
                     </div>
                 </div>
             </div>

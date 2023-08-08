@@ -1,22 +1,14 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let arr = [ 
-        document.getElementById('b1'),
-        document.getElementById('b2'),
-        document.getElementById('b3'),
-        document.getElementById('b4'),
-        document.getElementById('b5'),
-        document.getElementById('b6'),
-        document.getElementById('b7'),
-        document.getElementById('b8')
-    ];
-
-    adjustButtonWidth(arr);
-  });
-
-  function adjustButtonWidth(buttons) {
-    buttons.forEach(button => {
-        if (button.textContent.length > 4) {
-            button.style.width = '150px';
+function checkButtonsWidth()
+{
+    let buttons = document.getElementsByTagName('button');
+    for ( let i = 0; i < buttons.length; i++ )
+    {
+        if (buttons[i].textContent.length > 4) {
+            buttons[i].style.width = '150px';
         } 
-    });
-  }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    checkButtonsWidth();
+});
