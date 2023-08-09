@@ -59,109 +59,53 @@ body
 .accessories
 {
     position: absolute;
-    z-index: 3;
+    z-index: 6;
     top: 20px;
+    left: 199px;
 }
 
 .ears
 {
     position: absolute;
     z-index: 2;
-    top: -12px;
+    top: -15px;
 }
 
 .hair
 {
     position: absolute;
-    z-index: 4;
+    z-index: 5;
     top: 20px;
+    /* left: 250px; */
 }
 
 .eyes
 {
     position: absolute;
-    z-index: 5;
+    z-index: 7;
     top: 20px;
 }
 
 .leg
 {
     position: absolute;
-    z-index: 5;
+    z-index: 1;
     top: 20px;
 }
 
 .nose
 {
     position: absolute;
-    z-index: 5;
+    z-index: 2;
     top: 20px;
 }
 
 .mouth
 {
     position: absolute;
-    z-index: 5;
+    z-index: 3;
     top: 20px;
 }
-
-/* 
-.background
-{
-    position: relative;
-    top: 0;
-    left: 0;
-    /* border: 1px solid #000000; */
-/* }  */
-/* 
-.neck
-{
-    position: relative;
-    top: -725px;
-} */
-/* 
-.accessories
-{
-    position: relative;
-    top: -2175px;
-    left: 5px; */
-/* }
-
-.ears
-{
-    position: relative;
-    top: -1485px;
-} */
-/* 
-.hair
-{
-    position: relative;
-    top: -2900px;
-} */
-/* 
-.eyes
-{
-    position: relative;
-    top: -3620px;
-} */
-/* 
-.leg
-{
-    position: relative;
-    top: -4350px;
-} */
-/* 
-.nose
-{
-    position: relative;
-    top: -5075px;
-} */
-
-/* .mouth
-{
-    position: relative;
-    top: -5800px;
-} */
 
 .buttons
 {
