@@ -172,3 +172,10 @@ button:hover
     font-size: var(--bold_font);
     size: 10px;
 }
+
+.bottom_editor
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

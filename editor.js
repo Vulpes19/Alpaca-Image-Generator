@@ -42,6 +42,12 @@ paths.set('Bend backward', 'assets/neck/bend-backward.png');
 paths.set('Bend forward', 'assets/neck/bend-forward.png');
 paths.set('Thick', 'assets/neck/thick.png');
 
+function getRandomElement(array)
+{
+    const randomIndex = Math.floor(Math.random() * array.length);
+    return array[randomIndex];
+}
+
 function updateImage( id, path )
 {
     const image = document.getElementById(id);
@@ -72,7 +78,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const legButton = document.getElementById('b6');
     const mouthButton = document.getElementById('b4');
     const neckButton = document.getElementById('b5');
+    const randomButton = document.getElementById('random');
+    const style = document.getElementById('style');
+    const editorButtons = [
+        bgButton,
+        earsButton,
+        eyesButton,
+        hairButton,
+        legButton,
+        mouthButton,
+        neckButton
+    ];
 
+    randomButton.addEventListener( 'click', function() 
+    {
+        for ( var i = 0; i < editorButtons.length; i++ )
+        {
+            editorButtons[i].click();
+            const elements = style.getElementsByTagName('*');
+            let ret;
+            while ( true )
+            {
+                ret = getRandomElement(elements);
+                if ( ret.id != 'Default' && ret.id != 'first_line' &&
+                    ret.id != 'second_line' && ret.id != 'third_line')
+                    break ;
+            }
+            ret.click();
+        }
+    })
+    
     bgButton.addEventListener( 'click', function() 
         {
             var id = 'bg';
